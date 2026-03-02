@@ -468,57 +468,383 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O Que Você Vai Aprender */}
+      {/* Técnicas Completas - Seção Principal */}
+      <section className="py-20 bg-gradient-to-b from-amber-900 via-amber-800 to-amber-900 relative overflow-hidden">
+        {/* Background decorativo */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-40 h-40 bg-amber-400 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-60 h-60 bg-orange-400 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-amber-300 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-amber-400 text-amber-950 px-6 py-2 rounded-full text-sm font-bold mb-4 uppercase tracking-wider">
+              +20 Técnicas Profissionais
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Domine TODAS as Técnicas do Mercado
+            </h2>
+            <p className="text-amber-200 text-lg max-w-3xl mx-auto">
+              O curso mais completo do Brasil com técnicas exclusivas que vão te diferenciar da concorrência
+            </p>
+          </div>
+
+          {/* Grid de Técnicas Premium */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {/* Fio a Fio Clássico */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">✨</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Fio a Fio Clássico</h3>
+              <p className="text-amber-200 text-sm mb-3">Técnica fundamental com acabamento natural e elegante</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-amber-400/20 px-2 py-1 rounded">Iniciante</span>
+                <span>4 módulos</span>
+              </div>
+            </div>
+
+            {/* Volume Russo */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">💫</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Volume Russo</h3>
+              <p className="text-amber-200 text-sm mb-3">Leques perfeitos 2D a 6D para olhar marcante</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-amber-400/20 px-2 py-1 rounded">Avançado</span>
+                <span>6 módulos</span>
+              </div>
+            </div>
+
+            {/* Mega Volume */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🌟</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Mega Volume</h3>
+              <p className="text-amber-200 text-sm mb-3">Leques 10D a 20D para máximo impacto visual</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-orange-400/20 px-2 py-1 rounded text-orange-300">Expert</span>
+                <span>5 módulos</span>
+              </div>
+            </div>
+
+            {/* Volume Híbrido */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🎨</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Volume Híbrido</h3>
+              <p className="text-amber-200 text-sm mb-3">Combinação perfeita de clássico + volume</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-amber-400/20 px-2 py-1 rounded">Intermediário</span>
+                <span>4 módulos</span>
+              </div>
+            </div>
+
+            {/* Lifting de Cílios */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">⬆️</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Lifting de Cílios</h3>
+              <p className="text-amber-200 text-sm mb-3">Curvatura natural que dura até 8 semanas</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-green-400/20 px-2 py-1 rounded text-green-300">Popular</span>
+                <span>3 módulos</span>
+              </div>
+            </div>
+
+            {/* Brow Lamination */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🪄</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Brow Lamination</h3>
+              <p className="text-amber-200 text-sm mb-3">Sobrancelhas perfeitas e alinhadas</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-pink-400/20 px-2 py-1 rounded text-pink-300">Tendência</span>
+                <span>4 módulos</span>
+              </div>
+            </div>
+
+            {/* Lash Designer */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">👁️</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Lash Design</h3>
+              <p className="text-amber-200 text-sm mb-3">Mapeamento personalizado para cada olhar</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-amber-400/20 px-2 py-1 rounded">Avançado</span>
+                <span>5 módulos</span>
+              </div>
+            </div>
+
+            {/* Efeito Sirena */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🧜‍♀️</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Efeito Sirena</h3>
+              <p className="text-amber-200 text-sm mb-3">Visual dramático com ponta externa alongada</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-purple-400/20 px-2 py-1 rounded text-purple-300">Exclusivo</span>
+                <span>3 módulos</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Segunda linha de técnicas */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {/* Kim K */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">💎</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Efeito Kim K</h3>
+              <p className="text-amber-200 text-sm mb-3">Cílios espaçados estilo celebridade</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-pink-400/20 px-2 py-1 rounded text-pink-300">Tendência</span>
+                <span>2 módulos</span>
+              </div>
+            </div>
+
+            {/* Wet Look */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">💧</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Wet Look</h3>
+              <p className="text-amber-200 text-sm mb-3">Efeito molhado super moderno</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-blue-400/20 px-2 py-1 rounded text-blue-300">Novo</span>
+                <span>3 módulos</span>
+              </div>
+            </div>
+
+            {/* Natural Wispies */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🌿</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Natural Wispies</h3>
+              <p className="text-amber-200 text-sm mb-3">Visual natural com textura delicada</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-green-400/20 px-2 py-1 rounded text-green-300">Popular</span>
+                <span>3 módulos</span>
+              </div>
+            </div>
+
+            {/* Cílios Coloridos */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🌈</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Cílios Coloridos</h3>
+              <p className="text-amber-200 text-sm mb-3">Técnicas com cores e degradês</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-purple-400/20 px-2 py-1 rounded text-purple-300">Exclusivo</span>
+                <span>4 módulos</span>
+              </div>
+            </div>
+
+            {/* Efeito Boneca */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🎀</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Efeito Boneca</h3>
+              <p className="text-amber-200 text-sm mb-3">Olhar aberto e arredondado</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-amber-400/20 px-2 py-1 rounded">Intermediário</span>
+                <span>3 módulos</span>
+              </div>
+            </div>
+
+            {/* Cat Eye */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🐱</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Cat Eye</h3>
+              <p className="text-amber-200 text-sm mb-3">Olhar felino sedutor e marcante</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-amber-400/20 px-2 py-1 rounded">Avançado</span>
+                <span>3 módulos</span>
+              </div>
+            </div>
+
+            {/* Fox Eye */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🦊</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Fox Eye</h3>
+              <p className="text-amber-200 text-sm mb-3">Tendência que alonga o olhar</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-orange-400/20 px-2 py-1 rounded text-orange-300">Expert</span>
+                <span>4 módulos</span>
+              </div>
+            </div>
+
+            {/* Remoção Segura */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-3xl">🛡️</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Remoção Segura</h3>
+              <p className="text-amber-200 text-sm mb-3">Técnicas sem danificar cílios naturais</p>
+              <div className="flex items-center gap-2 text-amber-400 text-xs">
+                <span className="bg-green-400/20 px-2 py-1 rounded text-green-300">Essencial</span>
+                <span>2 módulos</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Mais técnicas em lista */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-amber-400/30">
+            <h3 className="text-2xl font-bold text-white text-center mb-8">+ Técnicas Bônus Incluídas</h3>
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Manutenção Perfeita</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Correção de Falhas</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Biossegurança Completa</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Anamnese Profissional</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Alongamento Lower Lash</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Leques Handmade</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Promade vs Handmade</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Tipos de Curvaturas</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Espessuras e Diâmetros</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Colas e Adesivos</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Posicionamento Correto</span>
+              </div>
+              <div className="flex items-center gap-3 text-amber-100">
+                <span className="w-2 h-2 bg-amber-400 rounded-full"></span>
+                <span>Isolamento Perfeito</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <a
+              href="https://checkout.lashcilioscursos.site/VCCL1O8SCU50"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-amber-400 to-orange-500 text-amber-950 px-12 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all shadow-2xl shadow-amber-500/30"
+            >
+              QUERO DOMINAR TODAS AS TÉCNICAS →
+            </a>
+            <p className="text-amber-300 mt-4 text-sm">Acesso imediato a +60 horas de conteúdo prático</p>
+          </div>
+        </div>
+      </section>
+
+      {/* O Que Você Vai Aprender - Complementar */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-4">
-            O Que Você Vai Dominar
+            Além das Técnicas, Você Também Vai Dominar
           </h2>
           <p className="text-center text-amber-700 mb-12 max-w-2xl mx-auto">
-            Formação completa do zero ao avançado para você se tornar referência no mercado
+            Formação completa para você construir um negócio de sucesso
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 text-center border border-amber-200 hover:shadow-xl transition-all hover:-translate-y-2">
-              <div className="w-20 h-20 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-4xl">👁️</span>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 border border-amber-200 hover:shadow-xl transition-all hover:-translate-y-2">
+              <div className="flex items-start gap-6">
+                <div className="w-20 h-20 bg-amber-200 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-4xl">📱</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-amber-900 mb-4">Marketing & Vendas</h3>
+                  <ul className="text-amber-700 space-y-2">
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Instagram Profissional para Lash Artists
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Captação de Clientes pelo WhatsApp
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Fotos e Vídeos que Vendem
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Stories que Convertem Seguidores em Clientes
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Estratégias de Fidelização
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Reels Virais no Nicho de Beleza
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-amber-900 mb-4">Técnicas Avançadas</h3>
-              <ul className="text-amber-700 text-left space-y-2">
-                <li>✓ Fio a Fio Clássico</li>
-                <li>✓ Volume Russo</li>
-                <li>✓ Mega Volume</li>
-                <li>✓ Brown Lamination</li>
-                <li>✓ Lifting de Cílios</li>
-              </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 text-center border border-amber-200 hover:shadow-xl transition-all hover:-translate-y-2">
-              <div className="w-20 h-20 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-4xl">📱</span>
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 border border-amber-200 hover:shadow-xl transition-all hover:-translate-y-2">
+              <div className="flex items-start gap-6">
+                <div className="w-20 h-20 bg-amber-200 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-4xl">💼</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-amber-900 mb-4">Gestão do Negócio</h3>
+                  <ul className="text-amber-700 space-y-2">
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Precificação Estratégica para Lucrar Mais
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Controle Financeiro Simplificado
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Como Manter Agenda Sempre Lotada
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Atendimento Premium e Encantador
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Escalando Seus Ganhos
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-green-500">✓</span> Montar Seu Espaço com Baixo Custo
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-amber-900 mb-4">Marketing & Vendas</h3>
-              <ul className="text-amber-700 text-left space-y-2">
-                <li>✓ Instagram Profissional</li>
-                <li>✓ Captação pelo WhatsApp</li>
-                <li>✓ Fotos que Vendem</li>
-                <li>✓ Stories que Convertem</li>
-                <li>✓ Fidelização de Clientes</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 text-center border border-amber-200 hover:shadow-xl transition-all hover:-translate-y-2">
-              <div className="w-20 h-20 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-4xl">💼</span>
-              </div>
-              <h3 className="text-xl font-bold text-amber-900 mb-4">Gestão do Negócio</h3>
-              <ul className="text-amber-700 text-left space-y-2">
-                <li>✓ Precificação Correta</li>
-                <li>✓ Controle Financeiro</li>
-                <li>✓ Agenda Lotada</li>
-                <li>✓ Atendimento Premium</li>
-                <li>✓ Escalando Ganhos</li>
-              </ul>
             </div>
           </div>
         </div>
