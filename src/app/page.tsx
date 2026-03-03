@@ -3,6 +3,25 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+// Declaração global para o Facebook Pixel
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+  }
+}
+
+// Função para rastrear evento de checkout
+const trackInitiateCheckout = () => {
+  if (typeof window !== 'undefined' && window.fbq) {
+    window.fbq('track', 'InitiateCheckout', {
+      content_name: 'Curso Lash Cílios',
+      content_category: 'Cursos',
+      value: 29.90,
+      currency: 'BRL'
+    });
+  }
+};
+
 const bannerImages = [
   "/images/hgf.png",
   "/images/lash.png",
@@ -290,6 +309,7 @@ export default function Home() {
             href="https://checkout.lashcilioscursos.site/VCCL1O8SCU50"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInitiateCheckout}
             className="bg-amber-800 hover:bg-amber-900 text-white px-6 py-2 rounded-full font-semibold transition-all text-sm shadow-lg hover:shadow-xl hover:scale-105"
           >
             GARANTIR VAGA
@@ -337,6 +357,7 @@ export default function Home() {
                 href="https://checkout.lashcilioscursos.site/VCCL1O8SCU50"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackInitiateCheckout}
                 className="inline-block bg-amber-500 hover:bg-amber-400 text-amber-950 px-10 py-5 rounded-full font-bold text-lg transition-all hover:scale-110 shadow-2xl animate-bounce"
               >
                 QUERO COMEÇAR AGORA →
@@ -765,6 +786,7 @@ export default function Home() {
               href="https://checkout.lashcilioscursos.site/VCCL1O8SCU50"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackInitiateCheckout}
               className="inline-block bg-gradient-to-r from-amber-400 to-orange-500 text-amber-950 px-12 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all shadow-2xl shadow-amber-500/30"
             >
               QUERO DOMINAR TODAS AS TÉCNICAS →
@@ -992,6 +1014,7 @@ export default function Home() {
                 href="https://checkout.lashcilioscursos.site/VCCL1O8SCU50"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackInitiateCheckout}
                 className="block w-full bg-green-500 hover:bg-green-600 text-white py-5 rounded-xl font-bold text-xl transition-all hover:scale-[1.02] shadow-lg text-center"
               >
                 QUERO GARANTIR MINHA VAGA →
@@ -1211,6 +1234,7 @@ export default function Home() {
             href="https://checkout.lashcilioscursos.site/VCCL1O8SCU50"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInitiateCheckout}
             className="inline-block bg-amber-400 hover:bg-amber-300 text-amber-950 px-12 py-5 rounded-full font-bold text-xl transition-all hover:scale-110 shadow-2xl"
           >
             QUERO MUDAR MINHA VIDA →
